@@ -1,7 +1,18 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
 
-<web-app>
-  <display-name>Archetype Created Web Application</display-name>
+    <!-- Маппинг бронирования номера в отеле -->
+    <servlet-mapping>
+        <servlet-name>BookRoomServlet</servlet-name>
+        <url-pattern>/book_room</url-pattern>
+    </servlet-mapping>
+    <!-- Имя сервлета и путь до сервлета -->
+    <servlet>
+        <servlet-name>BookRoomServlet</servlet-name>
+        <servlet-class>ru.orlov.servlets.BookRoomServlet</servlet-class>
+    </servlet>
+
 </web-app>
